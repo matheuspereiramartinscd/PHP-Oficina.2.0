@@ -13,8 +13,6 @@ Para rodar o projeto é necessário ter instalado o PHP versão 8.2.4, Xampp e a
 
 Após a criação da database e configuração do arquivo .env é necessário executar no terminal o comando php artisan migrate para criar a tabela orcamentos na database. 
 
-Para popular o banco de dados é necessário importar o arquivo orcamentos.sql na database oficina2.
-
 Depois de realizar a migração para a database rodar o comando php artisan serve e acessar o sistema através do link http://127.0.0.1:8000/.
 
 
