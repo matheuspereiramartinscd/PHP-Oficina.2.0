@@ -34,7 +34,19 @@
     }
 </style>
 
+/**Pagina de pesquisa de orçamentos do sistema Oficina 2.0
+* @author Matheus Pereira Martins
+* @version 1.0
+* @since 20/08/2023
+*/
+
+/**Formulário de pesquisa
+* @author Matheus Pereira Martins
+* @version 1.0
+* @since 20/08/2023
+*/
 <div class="container custom ">
+
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card ">
@@ -59,8 +71,12 @@
                     </form>
                     
                 
-       
-                    <table style="width: 100%">
+                    /**Tabela com os resultados
+                    * @author Matheus Pereira Martins
+                    * @version 1.0
+                    * @since 20/08/2023
+                    */
+                        <table style="width: 100%">
                         <thead>
                         <td>ID</td>
                         <td>Cliente</td>

@@ -7,9 +7,7 @@ use App\Models\Orcamento;
 
 class OrcamentoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index(Request $request)
     {
 
@@ -23,16 +21,20 @@ class OrcamentoController extends Controller
     
 
     /**
-     * Show the form for creating a new resource.
-     */
+    * Mostra o formulário utilizado para cadastrar orçamentos
+    *
+    * @author Matheus Pereira Martins
+    */
     public function create()
     {
         return view('create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+   /**
+    * Utilizado para salvar os dados obtidos no formulário na database.
+    *
+    * @author Matheus Pereira Martins
+    */
     public function store(Request $request)
     {
 
@@ -67,17 +69,13 @@ class OrcamentoController extends Controller
 
 
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
+
 
     /**
-     * Show the form for editing the specified resource.
-     */
+    * Utilizado para editar os dados salvos na database.
+    *
+    * @author Matheus Pereira Martins
+    */
     public function edit(string $id)
     {
         $orcamento = Orcamento::findOrFail($id);
@@ -85,8 +83,10 @@ class OrcamentoController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     */
+    * Utilizado para editar os dados salvos na database.
+    *
+    * @author Matheus Pereira Martins
+    */
     public function update(Request $request, string $id)
     {
         $updateData = $request->validate([
@@ -118,8 +118,10 @@ class OrcamentoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     */
+    * Utilizado para deletar os dados salvos na database.
+    *
+    * @author Matheus Pereira Martins
+    */
     public function destroy(string $id)
     {
         $orcamento = Orcamento::findOrFail($id);
